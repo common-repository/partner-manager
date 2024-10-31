@@ -1,0 +1,128 @@
+/* compileOnSave: true, expandedFilenamePattern: ../css/$1.css */
+.partner-slider {
+  height: 120px;
+  margin: 25px auto 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+
+  li {
+    position: relative;
+    display: inline-block;
+    height: 120px;
+    max-width: 250px;
+    margin: 0 30px;
+    text-align: center;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    a {
+      display: inline-block;
+      transition: opacity 0.3s ease-out;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.partner-divider-top {
+  width: 80%;
+  padding-top: 20px;
+  margin: 0 auto 40px;
+  border-bottom: 2px solid #d6d7d9;
+}
+
+.partner-divider-bottom {
+  width: 80%;
+  padding-bottom: 20px;
+  margin: 60px auto 0;
+  border-top: 2px solid #d6d7d9;
+}
+
+.partner-list {
+  padding: 0;
+
+  li {
+    list-style: none;
+    min-height: 120px;
+    padding-top: 20px;
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a.logo {
+      /* Internet Explorer 10 */
+      display: -ms-flexbox;
+      /* Firefox */
+      display: -moz-box;
+      /* Safari, Opera, and Chrome */
+      display: -webkit-box;
+      /* W3C */
+      display: box;
+      float: left;
+      width: 250px;
+      height: 120px;
+      text-align: center;
+      -ms-flex-pack: center;
+      -ms-flex-align: center;
+      -moz-box-pack: center;
+      -moz-box-align: center;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      box-pack: center;
+      box-align: center;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: center;
+      }
+    }
+
+    .content {
+      display: block;
+      margin-left: 280px;
+
+      h2 {
+        padding-top: 5px;
+        margin-bottom: -8px;
+      }
+
+      .website {
+        margin-bottom: 10px;
+        display: block;
+      }
+    }
+  }
+
+  &.alternate {
+    li:nth-child(even) {
+      a.logo {
+        float: right;
+      }
+      .content {
+        margin-left: 0;
+        margin-right: 260px;
+        text-align: right;
+
+        .website {
+          // float: right;
+        }
+      }
+    }
+  }
+}

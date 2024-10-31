@@ -1,0 +1,123 @@
+/* compileOnSave: true, expandedFilenamePattern: ../css/$1.css */
+.partner-slider {
+  height: 120px;
+  margin: 25px auto 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.partner-slider li {
+  position: relative;
+  display: inline-block;
+  height: 120px;
+  max-width: 250px;
+  margin: 0 30px;
+  text-align: center;
+}
+
+.partner-slider li img {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.partner-slider li a {
+  display: inline-block;
+  transition: opacity 0.3s ease-out;
+}
+
+.partner-slider li a:hover {
+  opacity: 0.7;
+}
+
+.partner-divider-top {
+  width: 80%;
+  padding-top: 20px;
+  margin: 0 auto 40px;
+  border-bottom: 2px solid #d6d7d9;
+}
+
+.partner-divider-bottom {
+  width: 80%;
+  padding-bottom: 20px;
+  margin: 60px auto 0;
+  border-top: 2px solid #d6d7d9;
+}
+
+.partner-list {
+  padding: 0;
+}
+
+.partner-list li {
+  list-style: none;
+  min-height: 120px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+
+.partner-list li:last-child {
+  margin-bottom: 0;
+}
+
+.partner-list li a.logo {
+  /* Internet Explorer 10 */
+  display: -ms-flexbox;
+  /* Firefox */
+  display: -moz-box;
+  /* Safari, Opera, and Chrome */
+  display: -webkit-box;
+  /* W3C */
+  display: box;
+  float: left;
+  width: 250px;
+  height: 120px;
+  text-align: center;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  box-align: center;
+}
+
+.partner-list li a.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: center;
+}
+
+.partner-list li .content {
+  display: block;
+  margin-left: 280px;
+}
+
+.partner-list li .content h2 {
+  padding-top: 5px;
+  margin-bottom: -8px;
+}
+
+.partner-list li .content .website {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.partner-list.alternate li:nth-child(even) a.logo {
+  float: right;
+}
+
+.partner-list.alternate li:nth-child(even) .content {
+  margin-left: 0;
+  margin-right: 260px;
+  text-align: right;
+}
+
+/*# sourceMappingURL=partner-manager-public.css.map */
